@@ -1,0 +1,83 @@
+.container {
+  margin: auto;
+  width: 80%;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+.flexRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.view {
+  margin-top: 18rem;
+}
+
+.card {
+  width: 300px;
+  border-color:transparent;
+}
+.hr-width {
+  width: 50px;
+  display: flex;
+}
+
+.m-1 {
+  margin: 1px;
+}
+.m-2 {
+  margin: 12px;
+}
+.m-3 {
+  margin: 3px;
+}
+.p-1 {
+  padding: 2px;
+}
+.p-2 {
+  padding: 4px;
+}
+.p-3 {
+  padding: 6px;
+}
+
+.mb-1 {
+  margin-bottom: 2px;
+}
+.mb-2 {
+  margin-bottom: 4px;
+}
+.mt-1 {
+  margin-top: 2px;
+}
+.mt-2 {
+  margin-top: 4px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.input {
+  border-color: gray;
+  
+}
+
+::placeholder {
+  color: gray;
+}
+
+.img {
+  width: 500px;
+  height: 500px;
+}
+
+.content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
