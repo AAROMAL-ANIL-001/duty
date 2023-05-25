@@ -13,7 +13,7 @@ const Signin = () => {
     };
 
     localStorage.setItem("username", JSON.stringify(user));
-    navigate("/");
+    navigate("/home");
   };
   return (
     <div className="container view">
