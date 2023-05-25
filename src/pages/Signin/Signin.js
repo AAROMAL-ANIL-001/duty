@@ -9,7 +9,7 @@ const Signin = () => {
   const handleSubmit = () => {
     const user = {
       username: username,
-      token: "tokennnnn",
+      password: password,
     };
 
     localStorage.setItem("username", JSON.stringify(user));

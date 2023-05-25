@@ -10,24 +10,30 @@ const Home = () => {
       .then((response) => setCountries(response.data));
   });
   return (
-    <div className="container content">
-      {countries.map((country) => (
-        <div key={country.name}>
-          {/* <h3>Country name :{country.name}</h3>
-          <h4>Region : {country.region}</h4>
-          <img src={country.flag} className="img" /> */}
-          <div class="card mt-2" style={{ width: "25rem" }}>
-            <img class="card-img-top" src={country.flag} alt="Card image cap" />
-            <div class="card-body">
-              <p class="card-text">
-                Country name :{country.name}
-                <br />
-                Region : {country.region}
-              </p>
+    <div style={{ backgroundColor: "lightgray" }}>
+      <div className="container content">
+        {countries.map((country) => (
+          <div key={country.name}>
+            <div
+              class="card mt-2"
+              style={{ width: "25rem", backgroundColor: "gray" }}
+            >
+              <img
+                class="card-img-top"
+                src={country.flag}
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Country name :{country.name}
+                  <br />
+                  Region : {country.region}
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };
